@@ -4,6 +4,12 @@
     Course: ICT 4370: Python Programming
     Term: Summer 2022
     Date: August 21, 2022
+    
+Project Setup:
+    - Python version: This project is compatible with Python 3 version. It was developed and tested with Python 3.9.
+    - Project Dependencies: All the project dependencies are maintained in the requirements.txt file. All the dependencies, move to the project root directory and execute the command:
+`pip3 install -r requirements.txt` or `pip install -r requirements.txt` depending on how pip is configured.
+
 
 ## Notes:
     - This code requires the Data_Bonds.csv  and Data_Stocks.csv files (
