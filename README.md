@@ -1,14 +1,11 @@
-# ict_4370_portfolioApp
-ICT 4370 Assingment by Joseph Kabuika
+# ICT 4370 (Python Programming): Portfolio Assignment
 
-
-    Name: Joseph Kabuika
+    Author: Joseph Kabuika
     Course: ICT 4370: Python Programming
     Term: Summer 2022
     Date: August 21, 2022
-    Assignment: WEEK 10 Portfolio Assignment
 
-    Notes:
+## Notes:
     - This code requires the Data_Bonds.csv  and Data_Stocks.csv files (
     provided in the assignment instructions) to be in the same repository in order to run
     successfully.
@@ -17,7 +14,7 @@ ICT 4370 Assingment by Joseph Kabuika
     {investor_name}_investment_report.txt
     - The Code will generate the data char file named line_chart.svg
 
-    # 🚨 🚨 🚨 Troubleshooting Tips:
+## Troubleshooting Tips:
     If ModuleNotFoundError: No module named '_tkinter' => Make sure you install the python-tk or
     python3-tk package
 
