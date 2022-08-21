@@ -21,13 +21,13 @@ Project Setup:
     - The Code will generate the data char file named line_chart.svg
 
 ## Troubleshooting Tips:
-    If ModuleNotFoundError: No module named '_tkinter' => Make sure you install the python-tk or
+    If ModuleNotFoundError: No module named '_tkinter': Make sure you install the python-tk or
     python3-tk package
 
     # Make sure to specify correct Python version.
     # For example, if you run Python v3.9 run adjust command to
-    brew install python-tk@3.9
+    `brew install python-tk@3.9`
 
     If you are on Windows, you have to make sure to check the optiontcl/tk and IDLE when installing Python.
-    If you already installed Python, download the installer, run it and click Modify. Then check the tcl/tk and IDLE checkbox to install tkinter for your Python version.
+    If you already installed Python, download the installer, run it and click Modify. Then check the `tcl/tk` and `IDLE` checkbox to install tkinter for your Python version.
 
