@@ -364,7 +364,6 @@ if __name__ == '__main__':
         data_list = []
 
         for data in filtered_data:
-            # dates.append(stock['Date'])
             data_date = datetime.datetime.strptime(data['Date'], '%d-%b-%y')
             close_value = data['Close']
             total_value = close_value * stock.share_count
@@ -376,8 +375,8 @@ if __name__ == '__main__':
                 newStockMarket = StockMarket(stock.stock, initial_date, total_value)
                 print(stock.stock + " added")
                 stockDictionary[stock.stock] = newStockMarket
-            # else:
-            # stockDictionary[stock.stock].stockClose = total_value
+            else:
+                stockDictionary[stock.stock].stockClose = total_value
             stockDictionary[stock.stock].add_close_value(data_date, total_value)
             data_point = (data_date, total_value)
             data_list.append(data_point)
@@ -406,7 +405,6 @@ if __name__ == '__main__':
     write_to_file(bob.name + "_investment_report.txt", report)  # Save the report to a txt file
 
     # Analytics
-
     dateline_chart.title = bob.name + "'s Portfolio Evolution"
     dateline_chart.x_title = 'Date'
     dateline_chart.y_title = 'Value'
@@ -414,10 +412,7 @@ if __name__ == '__main__':
     dateline_chart.render_to_file('line_chart.svg')
 
     # UI Integration
-
     app = Application(master=root)
-    # app.pack()
-    # app.grid(column=1, row=5, sticky=W, padx=5, pady=5)
     app.create_widgets()
     app.mainloop()
     root.destroy()
